@@ -52,5 +52,11 @@
             <field type="float[6]" name="u_tiltangles" units="rad">Commanded tilt angles.</field>
             <field type="uint16_t[12]" name="u_rotors" units="rad">Commanded rotor speeds.</field>
       </message>
+      <message id="99" name="DYNAMIXEL_STATUS">
+            <description>Returns status of dynamixels (current position)</description>
+            <field type="uint64_t" name="time_boot_us" units="us">Timestamp (time since system boot).</field>
+            <field type="uint8_t" name="noutputs" units="1">Number of measured dynamixels.</field>
+            <field type="float[8]" name="angles" units="rad">Current angles.</field>
+      </message>
   </messages>
 </mavlink>
