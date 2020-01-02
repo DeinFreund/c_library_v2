@@ -56,7 +56,8 @@
             <description>Returns status of dynamixels (current position)</description>
             <field type="uint64_t" name="time_boot_us" units="us">Timestamp (time since system boot).</field>
             <field type="uint8_t" name="noutputs" units="1">Number of measured dynamixels.</field>
-            <field type="float[8]" name="angles" units="rad">Current angles.</field>
+            <field type="float[8]" name="anglesMeasured" units="rad">Current angle measurements.</field>
+            <field type="float[8]" name="anglesSet" units="rad">Current angle targets.</field>
       </message>
   </messages>
 </mavlink>
